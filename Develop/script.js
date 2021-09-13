@@ -36,7 +36,7 @@ function generatePassword() {
   }
    
   if (confirm('Do you want numbers to include in your password?') == true){
-    var number = '1234567890';
+    var number = '12345678901234567890';
     option.push(number);
   }
   
@@ -63,6 +63,7 @@ function generatePassword() {
 
   }
 }
+
 
 
 // Add event listener to generate button

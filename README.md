@@ -10,4 +10,8 @@
 
 4. After select each types you want, you can see the password generated.
 
+5. The password generator link is below.
+
+https://radoll93.github.io/Homework3_Javascript/
+
 ![Password Generator](./Develop/Password_Generator.gif)
