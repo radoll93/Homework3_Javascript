@@ -24,20 +24,20 @@ function generatePassword() {
   var option = [];
 
 
-  if (confirm('Do you want lowercase to include in your password?') == true){
+  if (confirm('Do you want lowercase letters to include in your password?') == true){
     var lowercase = 'abcdefghijklmnopqrstuvwxyz';
     option.push(lowercase);
   }
 
 
-  if (confirm('Do you want uppercase to include in your password?') == true){
+  if (confirm('Do you want uppercase letters to include in your password?') == true){
     var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     option.push(uppercase);  
   }
    
-  if (confirm('Do you want numeric to include in your password?') == true){
-    var numeric = '1234567890';
-    option.push(numeric);
+  if (confirm('Do you want numbers to include in your password?') == true){
+    var number = '1234567890';
+    option.push(number);
   }
   
   if (confirm('Do you want special characters to include in your password?') == true){
