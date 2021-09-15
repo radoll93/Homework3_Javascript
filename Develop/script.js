@@ -11,15 +11,15 @@ function writePassword() {
 }
 
 function generatePassword() {
-  var length = prompt('Password length : Enter 8 to 128');
+  var length = prompt('How many characters would you like to include in your password?');
 
   if(length<8){
     alert('Password should be greater than 8.');
     return '';
   } else if(length>128){
-    alert('Password should be less than 128.')
+    alert('Password should be less than 128.');
     return '';
-  } else {
+  } else if((length >=8) && (length <= 128)) {
 
   var option = [];
 
@@ -36,12 +36,12 @@ function generatePassword() {
   }
    
   if (confirm('Do you want numbers to include in your password?') == true){
-    var number = '12345678901234567890';
+    var number = '123456789';
     option.push(number);
   }
   
   if (confirm('Do you want special characters to include in your password?') == true){
-    var specialChar = "!@#$%^&*()-=+[]'?/<>";
+    var specialChar = "!@#$%^&*()-=+[]'?/<>{}";
     option.push(specialChar);  
   }
 
@@ -52,15 +52,24 @@ function generatePassword() {
 
 
   var RandomPassword = "";
-
-  for(let i=0; i<length; i++){
-    var selector = option.join('');
-    RandomPassword += selector[Math.floor(Math.random() * selector.length)]; 
+  for(let i=0; i<option.length; i++){
+    RandomPassword += option[i][Math.floor(Math.random() * option.length)];
   }
 
- 
-  return RandomPassword;
+  var returnPassword = RandomPassword;
 
+  for(let j=0; j<length-option.length; j++){
+    var selector = option.join('');
+    returnPassword += selector[Math.floor(Math.random() * selector.length)];
+  }
+
+   return returnPassword;
+
+
+
+  }else {
+    alert('Enter the correct type of input.');
+    return '';
   }
 }
 

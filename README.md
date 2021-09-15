@@ -4,9 +4,9 @@
 
 1. You can generate a confidential password in this web page.
 
-2. Choose length of password you want between 8 to 128.
+2. Choose length of password you want. The length should be number and the range is between 8 to 128.
 
-3. You have to choose at least charactor types among lowercases, uppercase, numeric and special charactoers.
+3. You have to choose at least one charactor types among lowercases, uppercase, numeric and special characters.
 
 4. After select each types you want, you can see the password generated.
 
